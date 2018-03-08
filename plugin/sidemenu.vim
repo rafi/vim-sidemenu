@@ -8,7 +8,7 @@ nnoremap <silent> <Plug>(sidemenu) :<C-u>call sidemenu#open(0)<cr>
 xnoremap <silent> <Plug>(sidemenu-visual) :<C-u>call sidemenu#open(1)<cr>
 
 " Set default menu
-if (if !exists("g:sidemenu"))
+if !exists("g:sidemenu")
   let g:sidemenu = [
         \   { 'title': 'General & Plugins',
         \     'children': [
