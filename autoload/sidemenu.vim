@@ -155,8 +155,6 @@ function! sidemenu#open(visualmode) abort
 			if verbose | echomsg 'Executing: ' exe | endif
 			execute exe
 		endif
-	elseif verbose
-		if verbose | echomsg 'Sidemenu cancelled.' | endif
 	endif
 endfunction
 
